@@ -5,123 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Chimie Seconde Bac Pro – Caractériser une solution</title>
   <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(to right, #0066cc, #003366);
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.1rem;
-    }
-    nav {
-      background: #004080;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-      display: inline-block;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 1100px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-    section {
-      background: white;
-      padding: 1.8rem;
-      margin-bottom: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #004080;
-      border-bottom: 3px solid #0066cc;
-      padding-bottom: 0.5rem;
-    }
-    h3 {
-      color: #0066cc;
-      margin-top: 1.5rem;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1.5rem 0;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 0.8rem;
-      text-align: left;
-    }
-    th {
-      background: #0066cc;
-      color: white;
-    }
-    .formule {
-      background: #e6f0ff;
-      padding: 1rem;
-      border-left: 5px solid #0066cc;
-      margin: 1.5rem 0;
-      font-size: 1.1rem;
-      font-weight: bold;
-    }
-    .video-link {
-      display: block;
-      margin: 1rem 0;
-      color: #0066cc;
-      text-decoration: none;
-    }
-    .video-link:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background: #004080;
-      color: white;
-      margin-top: 2rem;
-    }
-    @media (max-width: 768px) {
-      nav a { margin: 0.5rem; display: block; }
-      header h1 { font-size: 1.8rem; }
-    }
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f9; color:#333; line-height:1.6; }
+    header { background:linear-gradient(to right, #0066cc, #003366); color:white; text-align:center; padding:2rem 1rem; }
+    header h1 { margin:0; font-size:2.2rem; }
+    nav { background:#004080; padding:1rem; text-align:center; }
+    nav a { color:white; text-decoration:none; margin:0 1rem; font-weight:bold; display:inline-block; }
+    nav a:hover { text-decoration:underline; }
+    main { max-width:1100px; margin:2rem auto; padding:0 1.5rem; }
+    section { background:white; padding:1.8rem; margin-bottom:2rem; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+    h2 { color:#004080; border-bottom:3px solid #0066cc; padding-bottom:0.5rem; }
+    h3 { color:#0066cc; margin-top:1.5rem; }
+    .definition { background:#e6f0ff; padding:1rem; border-left:5px solid #0066cc; margin:1rem 0; font-weight:bold; }
+    .exemple { background:#fff3e6; padding:1rem; border-left:5px solid #ff9900; margin:1rem 0; }
+    img { max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px; margin:1rem 0; display:block; }
+    .video-link { color:#0066cc; text-decoration:none; font-weight:bold; }
+    .video-link:hover { text-decoration:underline; }
+    footer { text-align:center; padding:1.5rem; background:#004080; color:white; margin-top:2rem; }
+    @media (max-width:768px) { nav a { margin:0.5rem; display:block; } header h1 { font-size:1.8rem; } }
   </style>
 </head>
 <body>
 
 <header>
   <h1>Chimie – Seconde Bac Pro</h1>
-  <p>Comment caractériser une solution ?</p>
-  <p>Lycée Gustave Eiffel – Varennes-sur-Seine – Année 2025-2026</p>
+  <p>Module : Comment caractériser une solution ?</p>
+  <p>Lycée Gustave Eiffel – Varennes-sur-Seine – 2025-2026</p>
 </header>
 
 <nav>
   <a href="#accueil">Accueil</a>
-  <a href="#objectifs">Objectifs</a>
-  <a href="#bases">Bases : Atomes, ions, molécules</a>
-  <a href="#materiel">Matériel et verrerie</a>
-  <a href="#pH">pH & Acide/Base</a>
-  <a href="#mesure-pH">Mesurer le pH</a>
+  <a href="#bases">Atomes – Molécules – Ions</a>
+  <a href="#verrerie">Verrerie & Matériel</a>
+  <a href="#pH">Le pH</a>
+  <a href="#mesure">Mesurer le pH</a>
   <a href="#concentration">Concentration massique</a>
   <a href="#dilution">Dilution</a>
   <a href="#methode">Fiche méthode</a>
@@ -131,145 +47,211 @@
 <main>
 
   <section id="accueil">
-    <h2>Bienvenue sur le site de la séquence Chimie</h2>
-    <p>Cette séquence suit le programme officiel de physique-chimie de seconde professionnelle (BO spécial n°5 du 11 avril 2019 – toujours en vigueur en 2026).</p>
-    <p><strong>Objectif principal :</strong> Apprendre à caractériser une solution aqueuse : mesurer le pH, préparer une solution à concentration donnée, réaliser une dilution.</p>
-    <p>Ces compétences sont utiles en laboratoire, agroalimentaire, santé, maintenance, etc. J'ai ajouté des explications détaillées et des vidéos YouTube pour chaque notion et capacité à acquérir.</p>
-  </section>
-
-  <section id="objectifs">
-    <h2>Objectifs du module (extrait BO)</h2>
-    <p>Dans la continuité du thème « Organisation et transformation de la matière » du collège, ce module consolide la description de la matière à l'échelle macroscopique et microscopique. Une approche quantitative simple est introduite avec la concentration massique lors d'une dissolution.</p>
+    <h2>Bienvenue – Objectifs de la séquence</h2>
+    <p>Programme officiel (BO spécial n°5 – 11 avril 2019) : consolider la description de la matière en solution aqueuse.</p>
     <ul>
-      <li>Identifier expérimentalement des espèces chimiques en solution aqueuse (ions, molécules).</li>
-      <li>Reconnaître et nommer le matériel et la verrerie de laboratoire.</li>
-      <li>Reconnaître expérimentalement le caractère acide, basique ou neutre d'une solution.</li>
-      <li>Mesurer un pH.</li>
-      <li>Réaliser expérimentalement une dilution.</li>
-      <li>Préparer une solution de concentration massique donnée, par dissolution.</li>
+      <li>Identifier atomes / molécules / ions en solution</li>
+      <li>Reconnaître matériel et verrerie</li>
+      <li>Caractériser acide / base / neutre (pH)</li>
+      <li>Mesurer un pH</li>
+      <li>Préparer une solution par dissolution (concentration massique)</li>
+      <li>Réaliser une dilution</li>
     </ul>
-    <p><strong>Liens avec le cycle 4 :</strong> Solutions (solubilité, miscibilité), mesure du pH, transformation chimique.</p>
-    <p><strong>Liens maths :</strong> Proportionnalité (pour dilution et concentration).</p>
+    <p>Compétences transversales : proportionnalité, sécurité, protocole expérimental.</p>
   </section>
 
   <section id="bases">
-    <h2>Bases : Différence entre atome, molécule et ion</h2>
-    <p>Explication détaillée : Un atome est la plus petite particule d'un élément chimique qui conserve ses propriétés. Par exemple, un atome d'hydrogène (H). Une molécule est un assemblage d'atomes liés ensemble, comme l'eau (H₂O) qui est une molécule composée de deux atomes d'hydrogène et un d'oxygène. Un ion est un atome ou une molécule qui a gagné ou perdu des électrons, donc chargé électriquement. Par exemple, l'ion hydrogène H⁺ (perdu un électron) est présent dans les solutions acides. En solution aqueuse, on identifie ces espèces pour comprendre le comportement chimique.</p>
-    <p>Capacité : Identifier expérimentalement des espèces chimiques en solution aqueuse.</p>
-    <h3>Vidéos recommandées :</h3>
-    <a href="https://www.youtube.com/watch?v=E6yvElfgcqk" class="video-link">Molécules, atomes et ions - Physique-Chimie - Seconde - Les Bons Profs</a>
-    <a href="https://www.youtube.com/watch?v=PI4Ga7IjspE" class="video-link">Atomes, ions, molécules</a>
-    <a href="https://www.lumni.fr/video/molecules-atomes-et-ions" class="video-link">Molécules, atomes et ions - Lumni</a>
+    <h2>1. Atome – Molécule – Ion</h2>
+    
+    <h3>Définition</h3>
+    <div class="definition">
+      <strong>Atome</strong> : plus petite particule d'un élément chimique qui garde ses propriétés.<br>
+      <strong>Molécule</strong> : assemblage d'atomes liés chimiquement (ex. H₂O).<br>
+      <strong>Ion</strong> : atome ou molécule ayant gagné ou perdu des électrons → chargé électriquement (positif = cation, négatif = anion).
+    </div>
+
+    <h3>Propriétés principales</h3>
+    <ul>
+      <li>Atomes neutres → pas de charge</li>
+      <li>Molécules → souvent neutres, covalentes</li>
+      <li>Ions → présents dans les solutions électrolytiques (sels dissous, acides, bases)</li>
+    </ul>
+
+    <h3>Exemples concrets</h3>
+    <div class="exemple">
+      - Atome : Na (sodium neutre)<br>
+      - Molécule : H₂O (eau), CO₂<br>
+      - Ion : Na⁺ (ion sodium), Cl⁻ (ion chlorure), H⁺ (dans acides), OH⁻ (dans bases)
+    </div>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Atome_mol%C3%A9cule_ion.svg/800px-Atome_mol%C3%A9cule_ion.svg.png" alt="Schéma atome molécule ion simple">
+    <p><em>Schéma simplifié : atome → molécule → ion (source : Wikimedia / éducatif)</em></p>
+
+    <p><strong>Capacité travaillée</strong> : Identifier expérimentalement des espèces chimiques en solution aqueuse.</p>
+
+    <h3>Vidéo recommandée</h3>
+    <a href="https://www.youtube.com/watch?v=E6yvElfgcqk" class="video-link" target="_blank">Molécules, atomes et ions – Les Bons Profs (Seconde)</a>
   </section>
 
-  <section id="materiel">
-    <h2>Matériel et verrerie de laboratoire</h2>
-    <p>Explication détaillée : En chimie, on utilise du matériel spécifique pour préparer et manipuler les solutions en sécurité. Par exemple, le bécher pour mélanger, l'éprouvette graduée pour mesurer des volumes approximatifs, la pipette jaugée pour des volumes précis, la fiole jaugée pour préparer des solutions à volume exact, la balance pour peser les solutés. Il faut nommer et reconnaître ces outils pour réaliser des expériences correctement, en respectant les règles de sécurité (lunettes, gants).</p>
-    <p>Capacité : Reconnaître et nommer le matériel et la verrerie de laboratoire employés lors des manipulations.</p>
-    <h3>Vidéos recommandées :</h3>
-    <a href="https://www.youtube.com/playlist?list=PLgACg0vrhUAcmzvDfoNkemojafkayJPIA" class="video-link">La Verrerie en Chimie (2nd) - Playlist</a>
-    <a href="https://www.youtube.com/watch?v=g_1XO83lwqE" class="video-link">Outils-Verrerie au laboratoire</a>
-    <a href="https://www.youtube.com/watch?v=8eliskz_GR8" class="video-link">La verrerie de base en chimie Partie 2</a>
+  <section id="verrerie">
+    <h2>2. Matériel et verrerie de laboratoire</h2>
+    
+    <h3>Définition</h3>
+    <div class="definition">
+      Verrerie = ensemble des récipients en verre utilisés pour manipuler, mesurer, préparer des solutions en toute sécurité et précision.
+    </div>
+
+    <h3>Principaux outils & usages</h3>
+    <ul>
+      <li><strong>Bécher</strong> : mélange, chauffe légère</li>
+      <li><strong>Erlenmeyer</strong> : agitation sans projection</li>
+      <li><strong>Éprouvette graduée</strong> : mesure volume approximative</li>
+      <li><strong>Pipette jaugée</strong> : volume précis (un trait)</li>
+      <li><strong>Fiole jaugée</strong> : préparation solution à volume exact</li>
+      <li><strong>Balance</strong> : pesée précise du soluté</li>
+    </ul>
+
+    <img src="https://culturesciences.chimie.ens.fr/sites/default/files/styles/large/public/2020-06/fiole_jaug%C3%A9e.jpg?itok=exemple" alt="Fiole jaugée et verrerie" onerror="this.src='https://leonardvinci.e-monsite.com/medias/files/06.verrerie-1.pdf';">
+    <p><em>Exemple de verrerie courante en lycée (source : CultureSciences-Chimie)</em></p>
+
+    <p><strong>Capacité travaillée</strong> : Reconnaître et nommer le matériel et la verrerie employés lors des manipulations.</p>
+
+    <h3>Vidéo recommandée</h3>
+    <a href="https://www.youtube.com/watch?v=g_1XO83lwqE" class="video-link" target="_blank">La verrerie de base en chimie – Partie 2</a>
   </section>
 
   <section id="pH">
-    <h2>Le pH – Acide, base, neutre</h2>
-    <p>Explication détaillée : Le pH mesure l'acidité ou la basicité d'une solution. Il varie de 0 à 14. Une solution acide (pH < 7) contient beaucoup d'ions H⁺ (ex. vinaigre, jus de citron). Une solution basique (pH > 7) contient beaucoup d'ions OH⁻ (ex. savon, eau de Javel). Une solution neutre (pH = 7) a autant de H⁺ que d'OH⁻ (ex. eau pure). La dilution d'une solution acide ou basique rapproche le pH de 7 car on ajoute de l'eau neutre, diminuant la concentration en ions.</p>
-    <p>Capacité : Reconnaître expérimentalement le caractère acide, basique ou neutre d'une solution.</p>
-    <table>
-      <tr>
-        <th>pH</th>
-        <th>Caractère</th>
-        <th>Exemples</th>
-        <th>Couleur papier pH</th>
-      </tr>
-      <tr>
-        <td>< 7</td>
-        <td>Acide</td>
-        <td>Jus de citron, vinaigre, Coca</td>
-        <td>Rouge / orange</td>
-      </tr>
-      <tr>
-        <td>= 7</td>
-        <td>Neutre</td>
-        <td>Eau pure</td>
-        <td>Vert</td>
-      </tr>
-      <tr>
-        <td>> 7</td>
-        <td>Basique</td>
-        <td>Savon, eau + bicarbonate</td>
-        <td>Bleu / violet</td>
-      </tr>
-    </table>
-    <h3>Vidéos recommandées :</h3>
-    <a href="https://www.youtube.com/watch?v=hJ4y2B8ueUo" class="video-link">Qu'est-ce que le pH ? Acide, basique, neutre | Collège | Physique Chimie</a>
-    <a href="https://www.youtube.com/watch?v=aE9iLeQNu7I" class="video-link">Cours Acide Base et pH : Essentiel en 5 minutes</a>
-    <a href="https://www.youtube.com/watch?v=hJQOhdbMKRc" class="video-link">Le pH c'est quoi? Acide, basique, neutre | Chimie</a>
+    <h2>3. Le pH – Acide, base, neutre</h2>
+    
+    <h3>Définition</h3>
+    <div class="definition">
+      Le pH mesure l'acidité ou la basicité d'une solution aqueuse. Échelle : 0 (très acide) → 7 (neutre) → 14 (très basique).
+    </div>
+
+    <h3>Propriétés</h3>
+    <ul>
+      <li>pH < 7 : excès d'ions H⁺ → acide</li>
+      <li>pH = 7 : [H⁺] = [OH⁻] → neutre</li>
+      <li>pH > 7 : excès d'ions OH⁻ → basique</li>
+      <li>Dilution → pH se rapproche de 7</li>
+    </ul>
+
+    <h3>Exemples concrets</h3>
+    <div class="exemple">
+      pH ≈ 2-3 : vinaigre, jus de citron<br>
+      pH ≈ 7 : eau du robinet<br>
+      pH ≈ 12-13 : soude diluée, eau + savon
+    </div>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/PH_scale-2.svg/800px-PH_scale-2.svg.png" alt="Échelle de pH avec couleurs">
+    <p><em>Échelle de pH avec couleurs des indicateurs (source : Wikimedia)</em></p>
+
+    <p><strong>Capacité travaillée</strong> : Reconnaître expérimentalement le caractère acide, basique ou neutre.</p>
+
+    <h3>Vidéo recommandée</h3>
+    <a href="https://www.youtube.com/watch?v=hJ4y2B8ueUo" class="video-link" target="_blank">Qu'est-ce que le pH ? – Collège / Lycée</a>
   </section>
 
-  <section id="mesure-pH">
-    <h2>Mesurer le pH</h2>
-    <p>Explication détaillée : Pour mesurer le pH, on utilise un pH-mètre (appareil électronique précis) ou des papiers pH/indicateurs colorés (moins précis mais simple). Protocole : Calibrer l'appareil si besoin, rincer l'électrode, plonger dans la solution, lire la valeur. Exemples : pH du vinaigre ≈ 3 (acide), eau ≈ 7, soude diluée ≈ 12 (basique). Attention à la variabilité des mesures (erreurs dues à l'appareil ou à la température).</p>
-    <p>Capacité : Mesurer un pH.</p>
-    <h3>Vidéos recommandées :</h3>
-    <a href="https://www.youtube.com/watch?v=keUNXIIwgPk" class="video-link">Comment mesurer le pH d'une solution</a>
-    <a href="https://www.youtube.com/watch?v=q3Ko-xBSwZI" class="video-link">Comment calculer le pH d'une solution aqueuse - Chimie</a>
+  <section id="mesure">
+    <h2>4. Mesurer le pH</h2>
+    
+    <h3>Méthodes</h3>
+    <ul>
+      <li>Papiers pH / bandelettes → rapide, ±0,5</li>
+      <li>pH-mètre → précis (±0,01), calibration obligatoire</li>
+    </ul>
+
+    <h3>Protocole simple (pH-mètre)</h3>
+    <ol>
+      <li>Rincer l'électrode à l'eau distillée</li>
+      <li>Calibrer (solutions tampons pH 4 et 7)</li>
+      <li>Plonger dans la solution</li>
+      <li>Lire et noter (attendre stabilisation)</li>
+    </ol>
+
+    <p><strong>Capacité travaillée</strong> : Mesurer un pH.</p>
+
+    <h3>Vidéo recommandée</h3>
+    <a href="https://www.youtube.com/watch?v=keUNXIIwgPk" class="video-link" target="_blank">Comment mesurer le pH d'une solution – Protocole</a>
   </section>
 
   <section id="concentration">
-    <h2>Concentration massique (dissolution)</h2>
-    <p>Explication détaillée : La concentration massique C_m est la masse de soluté (substance dissoute, ex. sel) par litre de solution. Formule : C_m = m / V (g/L). Pour préparer : Peser la masse m = C_m × V, dissoudre dans un peu d'eau (solvant), transvaser dans une fiole jaugée de volume V, compléter au trait avec de l'eau, agiter. Exemple : Pour 0,5 L à 10 g/L, m = 5 g. C'est une dissolution car on part d'un solide pur.</p>
-    <div class="formule">
-      C = m / V    (en g·L⁻¹)
+    <h2>5. Concentration massique (dissolution)</h2>
+    
+    <h3>Définition</h3>
+    <div class="definition">
+      Concentration massique C = masse de soluté (g) / volume de solution (L) → unité : g·L⁻¹
     </div>
-    <p>Capacité : Préparer une solution de concentration massique donnée, par dissolution.</p>
-    <h3>Vidéos recommandées :</h3>
-    <a href="https://www.youtube.com/watch?v=iAtC8XGufXI" class="video-link">Concentration massique ou concentration en masse ...</a>
-    <a href="https://www.youtube.com/watch?v=0uJ9G86DaDE" class="video-link">DISSOLUTION 🧪- Concentration Massique | Chimie | Lycée</a>
-    <a href="https://www.youtube.com/watch?v=ajDvx8s-UAc" class="video-link">Episode 26-1] Mass concentration and dissolution (2nd)</a>
+
+    <h3>Formule clé</h3>
+    <div class="formule">C = m / V    ⇒   m = C × V</div>
+
+    <h3>Exemple</h3>
+    <div class="exemple">
+      Préparer 500 mL (0,5 L) de solution à 20 g/L de NaCl :<br>
+      m = 20 × 0,5 = 10 g → peser 10 g NaCl, dissoudre, compléter à 500 mL en fiole jaugée.
+    </div>
+
+    <img src="https://chimactiv.agroparistech.fr/sites/default/files/styles/large/public/2021-10/fiole_jaug%C3%A9e.jpg?itok=exemple" alt="Fiole jaugée préparation solution" onerror="this.src='https://culturesciences.chimie.ens.fr/sites/default/files/styles/large/public/2020-06/fiole_jaug%C3%A9e.jpg';">
+    <p><em>Préparation avec fiole jaugée (source : Chimactiv / ENS)</em></p>
+
+    <p><strong>Capacité travaillée</strong> : Préparer une solution de concentration massique donnée par dissolution.</p>
+
+    <h3>Vidéo recommandée</h3>
+    <a href="https://www.youtube.com/watch?v=0uJ9G86DaDE" class="video-link" target="_blank">Dissolution – Concentration massique (Lycée)</a>
   </section>
 
   <section id="dilution">
-    <h2>Dilution</h2>
-    <p>Explication détaillée : La dilution consiste à ajouter du solvant (eau) à une solution pour diminuer sa concentration. Formule de conservation : C₁ × V₁ = C₂ × V₂ (où 1 = solution initiale, 2 = finale). Protocole : Calculer V₁ = (C₂ × V₂) / C₁, prélever V₁ avec pipette jaugée, verser dans fiole de V₂, compléter au trait, agiter. Exemple : Diluer 100 mL de 20 g/L pour 500 mL → C₂ = 4 g/L. Le pH change vers 7.</p>
-    <div class="formule">
-      C₁ × V₁ = C₂ × V₂
+    <h2>6. Dilution</h2>
+    
+    <h3>Définition</h3>
+    <div class="definition">
+      Ajouter du solvant (eau) pour diminuer la concentration sans changer la quantité de soluté.
     </div>
-    <p>Capacité : Réaliser expérimentalement une dilution.</p>
-    <h3>Vidéos recommandées :</h3>
-    <a href="https://www.youtube.com/watch?v=H0_TOt26lE8" class="video-link">DILUTION & DISSOLUTION 💚 3 formulas to know!</a>
-    <a href="https://www.youtube.com/watch?v=WNkIavKGy3Q" class="video-link">DILUTION Protocol 🎯 Chemistry Baccalaureate Exercise</a>
-    <a href="https://www.youtube.com/watch?v=4ii99kUPAns" class="video-link">👩‍🔬 Diluting a solution - CHEMISTRY - SECOND</a>
+
+    <h3>Formule clé</h3>
+    <div class="formule">C₁ × V₁ = C₂ × V₂</div>
+
+    <h3>Exemple</h3>
+    <div class="exemple">
+      Diluer 100 mL de solution à 50 g/L pour obtenir 500 mL :<br>
+      C₂ = (50 × 0,1) / 0,5 = 10 g/L<br>
+      Prélever 100 mL (pipette), verser en fiole 500 mL, compléter au trait.
+    </div>
+
+    <img src="https://culturesciences.chimie.ens.fr/sites/default/files/styles/large/public/2020-06/dilution_fiole.jpg?itok=exemple" alt="Dilution fiole jaugée" onerror="this.src='https://www.digischool.fr/cours/realiser-une-dilution-a-partir-d-une-solution-ufq5';">
+    <p><em>Protocole dilution avec fiole jaugée</em></p>
+
+    <p><strong>Capacité travaillée</strong> : Réaliser expérimentalement une dilution.</p>
+
+    <h3>Vidéo recommandée (animation + protocole)</h3>
+    <a href="https://www.youtube.com/watch?v=8qoJLqe1500" class="video-link" target="_blank">Dilution animation – Explication visuelle</a>
   </section>
 
   <section id="methode">
-    <h2>Fiche méthode / Trace écrite</h2>
-    <p>Explication détaillée : Cette fiche résume les protocoles. Toujours respecter la sécurité : identifier risques (pictogrammes), utiliser protections (gants, lunettes). Organiser le poste de travail, noter observations, valider résultats (vérifier ordres de grandeur).</p>
+    <h2>Fiche méthode – Trace écrite</h2>
     <ul>
-      <li><strong>Préparation solution :</strong> Peser → dissoudre dans bécher → transvaser en fiole jaugée → agiter → compléter au trait</li>
-      <li><strong>Mesure pH :</strong> Rincer électrode / bandelette → mesurer → noter (précision ±0,1)</li>
-      <li><strong>Dilution :</strong> C₁V₁ = C₂V₂ → respecter protocole sécurité (lunettes, gants si besoin)</li>
-      <li><strong>Vocabulaire clé :</strong> soluté, solvant, solution aqueuse, concentration massique, dilution, pH-mètre, fiole jaugée</li>
+      <li><strong>Dissolution</strong> : Peser → dissoudre bécher → transvaser fiole → compléter au trait → agiter</li>
+      <li><strong>Dilution</strong> : Calcul C₁V₁ = C₂V₂ → prélever V₁ → verser fiole V₂ → compléter → agiter</li>
+      <li><strong>Mesure pH</strong> : Rincer → calibrer → mesurer → noter</li>
+      <li><strong>Sécurité</strong> : Lunettes, gants, identifier pictogrammes, tri déchets</li>
     </ul>
   </section>
 
   <section id="exos">
-    <h2>Exercices rapides</h2>
-    <p>Explication détaillée : Ces exercices permettent de valider les capacités. Résolvez-les étape par étape, en utilisant les formules et en vérifiant les unités.</p>
+    <h2>Exercices d'application</h2>
     <ol>
-      <li>Une solution de pH 2 est : a) acide  b) neutre  c) basique (Réponse : a) acide)</li>
-      <li>Préparer 250 mL de solution à 8 g/L → quelle masse de soluté ? (Réponse : 2 g)</li>
-      <li>Diluer 200 mL de solution à 30 g/L pour obtenir 1 L → nouvelle concentration ? (Réponse : 6 g/L)</li>
+      <li>pH = 3 → caractère ? (Réponse : acide)</li>
+      <li>Préparer 250 mL à 12 g/L → masse ? (Réponse : 3 g)</li>
+      <li>Diluer 50 mL à 40 g/L pour 200 mL → C₂ ? (Réponse : 10 g/L)</li>
     </ol>
-    <p>À faire sur cahier ou via Google Forms (lien à venir).</p>
   </section>
 
 </main>
 
 <footer>
-  <p>© M. [Ton nom] – Physique-Chimie – Lycée Gustave Eiffel – Varennes-sur-Seine 2025-2026</p>
-  <p>Programme officiel : <a href="https://cache.media.education.gouv.fr/file/SP5-MEN-11-4-2019/72/6/spe630_annexe_1104726.pdf" style="color:#fff;">BO spécial n°5 2019 (PDF)</a></p>
+  <p>© M. KANDE – Physique-Chimie – Lycée Gustave Eiffel 2025-2026</p>
+  <p>Programme BO : <a href="https://cache.media.education.gouv.fr/file/SP5-MEN-11-4-2019/72/6/spe630_annexe_1104726.pdf" style="color:#fff;">Lien officiel PDF</a></p>
 </footer>
 
 </body>
